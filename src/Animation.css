@@ -1,0 +1,79 @@
+
+
+.absolute{
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: rgb(26, 25, 25);
+  height: 100%;
+  color: white;
+  justify-content: space-evenly;
+  z-index: -1;
+}
+
+.bg-shape1{
+  width: 30vw;
+  height:30vw;
+  border-radius: 9999px;
+}
+
+.bg-shape2{
+  width: 30vw;
+  height: 30vw;
+  border-radius: 9999px;
+}
+
+@keyframes one {
+  0%{right: 4%; top: 4%}
+  25%{right: 10%; top: 10%;}
+  50%{right: 15%; top: 15%}
+  75%{right: 10%; top: 5%}
+  100%{right: 4%; top: 4%}
+}
+
+
+@keyframes two {
+  0%{left: 4%; bottom: 4%}
+  25%{left: 10%; bottom: 10%;}
+  50%{left: 15%; bottom: 15%}
+  75%{left: 10%; bottom: 5%}
+  100%{left: 4%; bottom: 4%}
+}
+
+.opacity-50{
+  opacity: 0.7;
+}
+
+.down{
+  position:absolute;
+  bottom: 4%;
+  left: 4%;
+  animation: two 8s infinite;
+}
+.top{
+  position:absolute;
+  top: 4%;
+  right: 4%;
+  animation: one 8s infinite
+}
+
+.bg-blur{
+  filter: blur(80px);
+}
+
+.bg-violet{
+  background-color: 
+rgba(151, 71, 255, 1);
+}
+
+.bg-blue{
+  background-color: 
+rgb(71, 71, 255);
+}
+
+h1{
+  color: white;
+}
+
