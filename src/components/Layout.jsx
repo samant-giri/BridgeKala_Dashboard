@@ -168,7 +168,11 @@ const Layout = () => {
   ];
 
   return (
-    <>
+    <div style={{
+      height: "100%",
+      width:"100%",
+
+    }}>
       <div className="absolute">
         <div className="absolute insert-0 justify-center">
           <div className="top">
@@ -311,7 +315,7 @@ const Layout = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

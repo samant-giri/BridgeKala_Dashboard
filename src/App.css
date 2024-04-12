@@ -44,7 +44,7 @@
 .hero {
   display: flex;
   gap: 2%;
-  height: 90%;
+  min-height: 90%;
 }
 
 .blur-bg {
@@ -55,8 +55,13 @@
 
 .left {
   padding: 0 1.4%;
-  height: 100%;
+  min-height: 90%;
   width: 20%;
+  overflow: auto;
+}
+
+.left::-webkit-scrollbar{
+  display: none;
 }
 
 .left .events h3{
@@ -130,8 +135,13 @@
 }
 
 .right {
-  height: 100%;
+  min-height: 100%;
   width: 78%;
+  overflow: auto;
+}
+
+.right::-webkit-scrollbar{
+  display: none;
 }
 
 .right .right-header{
